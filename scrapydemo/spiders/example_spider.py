@@ -1,3 +1,6 @@
+# This is an example of a Basic Spider
+
+from scrapy.http.request import Request
 from scrapy.spider import Spider
 from scrapydemo.items import ExampleItem
 
@@ -9,7 +12,8 @@ class ExampleSpider(Spider):
 	]
 
 	def parse(self, response):
-		self.log('A response from %s just arrived!' % response.url)
-		item = ExampleItem()
-		item['title'] = response.xpath('//h1/text()').extract()
-		return item
+		for h1 in response.xpath('//h1/text()').extract():
+			yield ExampleItem(title = h1)
+
+		for url in response.xpath('//a/@href').extract():
+			yield Request(url, callback=self.parse)

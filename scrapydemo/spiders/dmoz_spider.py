@@ -1,6 +1,7 @@
+# This is an example of a Crawl Spider
+
 from scrapy.spider import Spider
 from scrapy.selector import Selector
-
 from scrapydemo.items import DmozItem
 
 

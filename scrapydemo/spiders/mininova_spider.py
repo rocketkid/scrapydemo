@@ -1,6 +1,7 @@
+# This is an example of a Crawl Spider
+
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
-
 from scrapydemo.items import TorrentItem
 
 class MininovaSpider(CrawlSpider):
