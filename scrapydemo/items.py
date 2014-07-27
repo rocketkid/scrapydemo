@@ -18,3 +18,10 @@ class TorrentItem(Item):
 	description = Field()
 	size = Field()
 
+# Represent item scapped from http://www.w3schools.com/xml/simple.xml
+class BreakfastItem(Item):
+	name = Field()
+	price = Field()
+	description = Field()
+	calories = Field()
+	
