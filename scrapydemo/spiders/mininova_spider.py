@@ -4,7 +4,6 @@ from scrapy.contrib.linkextractors import LinkExtractor
 from scrapydemo.items import TorrentItem
 
 class MininovaSpider(CrawlSpider):
-
 	name = 'mininova'
 	allowed_domains = ['mininova.org']
 	start_urls = ['http://www.mininova.org/today']

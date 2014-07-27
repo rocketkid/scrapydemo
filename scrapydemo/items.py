@@ -1,5 +1,9 @@
 from scrapy.item import Item, Field
 
+# Represent items scrapped from example.com
+class ExampleItem(Item):
+	title = Field()
+
 # Represent items scrapped from dmoz.org
 class DmozItem(Item):
 	name = Field()
