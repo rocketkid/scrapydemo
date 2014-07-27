@@ -13,7 +13,7 @@ The items scraped by this project are websites and the items are defined the cla
     scrapydemo.items.DmozItem
     scrapydemo.items.MininovaItem
     
-
+.. _Scrapy tutorial: http://doc.scrapy.org/en/latest/intro/tutorial.html
 Spiders
 =======
 
