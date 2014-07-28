@@ -1,2 +1,3 @@
-scrapydemo/*/*.pyc
+scrapydemo/spiders/*.pyc
+scrapydemo/*.pyc
 
